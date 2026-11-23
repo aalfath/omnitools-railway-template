@@ -6,6 +6,8 @@ A one-click Railway template for [OmniTools](https://github.com/iib0011/omni-too
 
 **Version:** OmniTools `0.7.0`, official image `iib0011/omni-tools:0.7.0@sha256:85f0e052a97326396c753e39de0ef74631c0783999ccca81ebc36262903ec9fa` (pinned by version and digest in the [`Dockerfile`](Dockerfile)).
 
+Note: upstream built the `0.7.0` image on release day from commit `3962355`, before `package.json` was bumped, so the app's footer reads `v0.6.0 (3962355)`. That is the official 0.7.0 image; upstream's later rebuild of the moved `v0.7.0` tag failed in CI and was never published.
+
 ## What it deploys
 
 One service, **OmniTools**, built from this repo's `Dockerfile`:
